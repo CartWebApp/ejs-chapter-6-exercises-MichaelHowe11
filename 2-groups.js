@@ -7,21 +7,14 @@ Give the class a static from method that takes an iterable object as argument an
 */
 
 class Group {
-   constructor(num1, num2, group) {
-      this.num1 = num1;
-      this.num2 = num2;
-
-      group = [
-         {
-            name: "2"
-         }
-      ]
+   constructor(list) {
+      groupArray = [];
       
    }
    static from(array) {
-      for (let i = 0; i < array.length; i++) {
-         this.group.push(array)
-      }
+      
+      
+      return(list);
    }
 
 }
