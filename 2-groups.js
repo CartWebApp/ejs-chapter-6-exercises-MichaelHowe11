@@ -11,9 +11,12 @@ class Group {
       this.num1 = num1;
       this.num2 = num2;
 
-   }
-   from() {
       
+   }
+   static from(array) {
+      for (let i = 0; i < array.length; i++) {
+         
+      }
    }
 
   }
