@@ -14,7 +14,6 @@ class Group {
    static from(array) {
 
       let temp = new Group();
-      //for (let i = 0; i < array.length; i++) {
       for (let item of array) {
          temp.list.push(item);
       }
@@ -31,17 +30,31 @@ class Group {
       let temp = new Group();
       let list2 = this.list
 
-      console.log(this.list)
 
-      for (let i = 0; i < list2; i++) {
-         console.log(list2[i])
-
-         if ((this.list[i].includes(value) === false)) {
-            temp.list.push(item);
-         }
+      if (list2.includes(value) === false) {
+         list2.push(value)
       }
 
-      return (temp);
+      return(list2)
+
+   }
+
+   delete(value) {
+      let temp = new Group();
+      let list2 = this.list
+
+      let valueloc = list2.indexOf(value)
+      console.log(list2);
+
+
+      if (list2.includes(value) === true) {
+         list2.splice(valueloc,1)
+         console.log(list2)
+      }
+
+      console.log(list2);
+      return(list2)
+
    }
 
 }
