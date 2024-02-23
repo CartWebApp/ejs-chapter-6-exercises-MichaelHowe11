@@ -7,12 +7,26 @@ It is okay if your iterator behaves strangely when the group is modified during 
 */
 
 // Your code here (and the code from the previous exercise)
+class Group {
+  constructor(list) {
+     this.list = [];
+    
+  }
+   from(array) {
 
+     let temp = new Group();
+
+     return(array)
+  }
+
+}
 
 // Tests:
 for (let value of Group.from(["a", "b", "c"])) {
     console.log(value);
   }
+
+
   // → a
   // → b
   // → c
