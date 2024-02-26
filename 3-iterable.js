@@ -9,24 +9,26 @@ It is okay if your iterator behaves strangely when the group is modified during 
 // Your code here (and the code from the previous exercise)
 class Group {
   constructor(list) {
-     this.list = [];
-    
+    this.list = list;
+
   }
-   from(array) {
+   static from(array) {
 
-     let temp = new Group();
+    let temp = new Group();
+    
+    let arrayit = array[Symbol.iterator]();
 
-     return(array)
+    return (arrayit);
   }
 
 }
 
 // Tests:
 for (let value of Group.from(["a", "b", "c"])) {
-    console.log(value);
-  }
+  console.log(value);
+}
 
 
-  // → a
-  // → b
-  // → c
+// → a
+// → b
+// → c
