@@ -11,15 +11,17 @@ class Group {
   constructor(list) {
     this.list = list;
 
+
   }
    static from(array) {
 
     let temp = new Group();
-    
+
     let arrayit = array[Symbol.iterator]();
 
     return (arrayit);
   }
+
 
 }
 
